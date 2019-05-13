@@ -72,10 +72,11 @@ public class AESUtils {
         InputStream keyStream = null;
         OutputStream outputStream = null;
         try {
-            keyStream = new FileInputStream(conf.getString("conf.file.keyFile"));
+//            keyStream = new FileInputStream(conf.getString("conf.file.keyFile"));
             inputStream = new FileInputStream(new File(sourceFile));
             outputStream = new FileOutputStream(new File(encrypFile));
-            byte[] key = toByteArray(keyStream);
+//            byte[] key = toByteArray(keyStream);
+            byte[] key = conf.getString("conf.file.key").getBytes();
             Cipher cipher = initAESCipher(key, Cipher.ENCRYPT_MODE);
 
             CipherInputStream cipherInputStream = new CipherInputStream(inputStream, cipher);
@@ -111,8 +112,9 @@ public class AESUtils {
         InputStream keyStream = null;
         OutputStream outputStream = null;
         try {
-            keyStream = new FileInputStream(conf.getString("conf.file.keyFile"));
-            byte[] key = toByteArray(keyStream);
+//            keyStream = new FileInputStream(conf.getString("conf.file.keyFile"));
+//            byte[] key = toByteArray(keyStream);
+            byte[] key = conf.getString("conf.file.key").getBytes();
             Cipher cipher = initAESCipher(key, Cipher.DECRYPT_MODE);
             inputStream = new FileInputStream(new File(sourceFile));
             outputStream = new FileOutputStream(new File(decryptFile));
@@ -158,7 +160,7 @@ public class AESUtils {
     }
 
     public static void main(String[] args) throws NoSuchAlgorithmException {
-        initKey();
+//        initKey();
         encryptFile("/home/rukhlyn/IdeaProjects/AESUtils/src/test.txt", "/home/rukhlyn/IdeaProjects/AESUtils/src/encrypt.txt");
         decryptFile("/home/rukhlyn/IdeaProjects/AESUtils/src/encrypt.txt", "/home/rukhlyn/IdeaProjects/AESUtils/src/decrypt.txt");
     }
