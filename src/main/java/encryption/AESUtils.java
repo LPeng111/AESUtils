@@ -158,10 +158,4 @@ public class AESUtils {
         }
         return out.toByteArray();
     }
-
-    public static void main(String[] args) throws NoSuchAlgorithmException {
-//        initKey();
-        encryptFile("/home/rukhlyn/IdeaProjects/AESUtils/src/test.txt", "/home/rukhlyn/IdeaProjects/AESUtils/src/encrypt.txt");
-        decryptFile("/home/rukhlyn/IdeaProjects/AESUtils/src/encrypt.txt", "/home/rukhlyn/IdeaProjects/AESUtils/src/decrypt.txt");
-    }
 }
