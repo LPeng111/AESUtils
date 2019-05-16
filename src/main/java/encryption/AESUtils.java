@@ -65,6 +65,7 @@ public class AESUtils {
 
     /**
      * encrypt string
+     *
      * @param content
      * @param encryptFile
      */
@@ -92,7 +93,25 @@ public class AESUtils {
     }
 
     /**
+     *
+     * @param content
+     * @return
+     */
+    public static byte[] encryptString(String content) {
+        try {
+            byte[] key = conf.getString("conf.file.key").getBytes();
+            Cipher cipher = initAESCipher(key, Cipher.ENCRYPT_MODE);
+            byte[] bytes = content.getBytes(StandardCharsets.UTF_8);
+            return cipher.doFinal(bytes);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    /**
      * encrypte byte
+     *
      * @param content
      * @param encryptFile
      */
@@ -116,6 +135,21 @@ public class AESUtils {
             }
         }
 
+    }
+
+    /**
+     * @param content
+     * @return
+     */
+    public static byte[] encryptByte(byte[] content) {
+        try {
+            byte[] key = conf.getString("conf.file.key").getBytes();
+            Cipher cipher = initAESCipher(key, Cipher.ENCRYPT_MODE);
+            return cipher.doFinal(content);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     /**

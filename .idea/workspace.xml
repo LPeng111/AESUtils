@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="89d38696-1bd6-4141-90d9-bded69a24f87" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/decrypt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/decrypt.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/encrypt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/encrypt.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/encryption/AESUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/encryption/AESUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/encryption/AESUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/encryption/AESUtils.class" afterDir="false" />
-    </list>
+    <list default="true" id="89d38696-1bd6-4141-90d9-bded69a24f87" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -172,12 +165,20 @@
       <option name="presentableId" value="Default" />
       <updated>1557922948571</updated>
       <workItem from="1557922951509" duration="106000" />
-      <workItem from="1557978902179" duration="1368000" />
+      <workItem from="1557978902179" duration="1396000" />
     </task>
+    <task id="LOCAL-00001" summary="增加byte[]加密和String加密">
+      <created>1557997777984</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1557997777984</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1474000" />
+    <option name="totallyTimeSpent" value="1502000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="50" y="-1" width="1870" height="1082" extended-state="6" />
@@ -192,7 +193,7 @@
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32917964" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32917964" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -215,6 +216,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="增加byte[]加密和String加密" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加byte[]加密和String加密" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
