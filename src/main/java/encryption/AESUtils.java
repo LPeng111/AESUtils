@@ -110,6 +110,22 @@ public class AESUtils {
     }
 
     /**
+     *
+     * @param content
+     * @return
+     */
+    public static byte[] decryptByte(byte[] content) {
+        try {
+            byte[] key = conf.getString("conf.file.key").getBytes();
+            Cipher cipher = initAESCipher(key, Cipher.DECRYPT_MODE);
+            return cipher.doFinal(content);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    /**
      * encrypte byte
      *
      * @param content

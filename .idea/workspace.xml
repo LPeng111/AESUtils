@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="89d38696-1bd6-4141-90d9-bded69a24f87" name="Default Changelist" comment="" />
+    <list default="true" id="89d38696-1bd6-4141-90d9-bded69a24f87" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/encryption/AESUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/encryption/AESUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/encryption/AESUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/encryption/AESUtils.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -9,6 +13,11 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
@@ -18,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/encryption/AESUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1223">
-              <caret line="128" column="37" lean-forward="true" selection-start-line="128" selection-start-column="37" selection-end-line="128" selection-end-column="37" />
+            <state relative-caret-position="359">
+              <caret line="119" column="34" lean-forward="true" selection-start-line="119" selection-start-column="34" selection-end-line="119" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,6 +83,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -112,7 +122,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -166,6 +175,7 @@
       <updated>1557922948571</updated>
       <workItem from="1557922951509" duration="106000" />
       <workItem from="1557978902179" duration="1396000" />
+      <workItem from="1558007536629" duration="1693000" />
     </task>
     <task id="LOCAL-00001" summary="增加byte[]加密和String加密">
       <created>1557997777984</created>
@@ -174,26 +184,33 @@
       <option name="project" value="LOCAL" />
       <updated>1557997777984</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="增加返回值类型">
+      <created>1558007735284</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1558007735284</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1502000" />
+    <option name="totallyTimeSpent" value="3195000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="50" y="-1" width="1870" height="1082" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15005477" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1516977" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32917964" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32917964" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -203,6 +220,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -219,7 +237,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="增加byte[]加密和String加密" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加byte[]加密和String加密" />
+    <MESSAGE value="增加返回值类型" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加返回值类型" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -240,8 +259,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/encryption/AESUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1223">
-          <caret line="128" column="37" lean-forward="true" selection-start-line="128" selection-start-column="37" selection-end-line="128" selection-end-column="37" />
+        <state relative-caret-position="359">
+          <caret line="119" column="34" lean-forward="true" selection-start-line="119" selection-start-column="34" selection-end-line="119" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
