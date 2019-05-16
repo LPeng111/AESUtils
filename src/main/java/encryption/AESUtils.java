@@ -2,10 +2,12 @@ package encryption;
 
 import com.typesafe.config.Config;
 import com.typesafe.config.ConfigFactory;
+import sun.security.krb5.internal.crypto.Aes128;
 
 import javax.crypto.*;
 import javax.crypto.spec.SecretKeySpec;
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.security.NoSuchAlgorithmException;
 
 public class AESUtils {
@@ -59,6 +61,61 @@ public class AESUtils {
             e.printStackTrace();
         }
         return cipher;
+    }
+
+    /**
+     * encrypt string
+     * @param content
+     * @param encryptFile
+     */
+    public static void encryptString(String content, String encryptFile) {
+        FileOutputStream fileOutputStream = null;
+        try {
+            byte[] key = conf.getString("conf.file.key").getBytes();
+            Cipher cipher = initAESCipher(key, Cipher.ENCRYPT_MODE);
+            byte[] bytes = content.getBytes(StandardCharsets.UTF_8);
+            byte[] result = cipher.doFinal(bytes);
+            fileOutputStream = new FileOutputStream(encryptFile);
+            fileOutputStream.write(result);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (fileOutputStream != null) {
+                    fileOutputStream.close();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+    }
+
+    /**
+     * encrypte byte
+     * @param content
+     * @param encryptFile
+     */
+    public static void encryptByte(byte[] content, String encryptFile) {
+        FileOutputStream fileOutputStream = null;
+        try {
+            byte[] key = conf.getString("conf.file.key").getBytes();
+            Cipher cipher = initAESCipher(key, Cipher.ENCRYPT_MODE);
+            byte[] result = cipher.doFinal(content);
+            fileOutputStream = new FileOutputStream(encryptFile);
+            fileOutputStream.write(result);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (fileOutputStream != null) {
+                    fileOutputStream.close();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
     }
 
     /**
@@ -148,14 +205,9 @@ public class AESUtils {
         }
     }
 
-    public static byte[] toByteArray(InputStream in) throws IOException {
-
-        ByteArrayOutputStream out = new ByteArrayOutputStream();
-        byte[] buffer = new byte[1024 * 4];
-        int n = 0;
-        while ((n = in.read(buffer)) != -1) {
-            out.write(buffer, 0, n);
-        }
-        return out.toByteArray();
+    public static void main(String[] args) {
+        String test = "hello world";
+        AESUtils.encryptString(test, "src/encrypt.txt");
+        AESUtils.decryptFile("src/encrypt.txt", "src/test.txt");
     }
 }
